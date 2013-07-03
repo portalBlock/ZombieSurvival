@@ -1,0 +1,16 @@
+# This file contains awards given to individual players for killing x number of mobs in 2 secs
+# Awards List (Integer Value of how many kills a player needs in 2 seconds to receive)
+
+award-at-kill:
+  - 2
+  - 4
+  - 6
+2:
+  item: 373:8193
+  message: You've been given a regeneration potion!
+4:
+  item: 373:8197
+  message: You've been given a instant healing potion!
+6:
+  item: 373:16389
+  message: You've been given a instant healing splash potion!

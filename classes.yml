@@ -1,0 +1,24 @@
+# This is the classes file. Here you may add as many classes as you like. Please make sure you do this correctly!
+# YOU MUST list all classes here for them to work. You can also disable a class by removing it from this list.
+# Class names must contain NO spaces and be less than 14 characters long
+# Class items are given at the start of a game.
+# Class description can be anything you want.
+# If classes are enabled, scoring will include class scores and top classes.
+
+Classes:
+  - Guards
+  - Masons
+Guards:
+  description: Order of the Guards
+  items:
+    - 272
+    - 373:8193
+    - 297
+Masons:
+  description: Order of the Masons
+  items:
+    - 274
+    - 373:16421
+    - 297
+    
+

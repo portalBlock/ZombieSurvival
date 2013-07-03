@@ -1,0 +1,172 @@
+#-----Game Settings-----#
+
+# Minimum number of players joined to start a game
+start-player-count: 2
+
+# Should the player receive items when they first join from the config settings (at bottom)
+items-at-join: true
+
+# Should water and cobweb hurt players?
+infect-mat: true
+
+# A 1/nth chance a runner will spawn; 0 = disabled
+runner-chance: 10
+
+#-----Wave Settings-----#
+
+# Seconds between new waves
+wave-wait: 20
+
+# Heal players after each wave has completed?
+heal-player-new-wave: true
+
+# A 1/nth chance a wave will be a wolf wave; 0 = disabled
+wolf-wave-chance: 10
+
+# Use smarter wave size adjuster? (If true, waves are based on multiplier and player load combined)
+use-smart-waves: true
+
+#-----Mob Specific Settings-----#
+
+# How fast normal zombies seek players 0.23 is NORMAL SPEED
+seek-speed: 0.23
+
+# How fast Runner (FAST) zombies seek players (0.40 is default)
+fast-seek-speed: 0.40
+
+# Bite effect length in seconds (how long the potion effect is active after being hit by a zombie)
+bite-effect-length: 10
+
+# Bite Effects Chance 0 = disabled, 1/nth chance (so if set to 2 chance is 50%)
+effect-chance: 20
+
+# If a mob dies by natural causes should they respawn?
+death-non-human-respawn: true
+
+# Should non-human damage actually damage the mobs? (Example: lava, sun light)
+all-hurt: true
+
+# Mob health multiplier, (0 is off) higher values increase mob health faster until it reaches max allowed by Minecraft
+health-multi: 1.00
+
+# Damage Multiplier, between (0 is off) higher values cause zombies to deal more damage
+damage-multi: 0.20
+
+#-----Points/Economy Settings-----#
+
+# Should a player be taxed when they die? 0.00-1.00
+death-loss-percent: 0.08
+
+# Empty Account on /leave and when game is over (THIS SETTING APPLIES TO ECONOMY USAGE)
+empty-account: false
+
+# Force points if using economy system
+force-points: false
+
+# Maximum number of points a user can receive per kill (works for economies too)
+max-points-per-kill: 20
+
+# Should the points be reset when a player dies?
+reset-points-on-death: true
+
+#-----Misc. Game Settings-----#
+
+# Time a player must wait before rejoining a game after using /leave or a leave sign
+leave-timer: 30
+
+# Separate Inventories between games/real world (inventories will be restored at end of game)
+inventory-save: true
+
+# Force inventory clear on SERVER JOIN (useful for automated servers)
+inventory-clear-join: false
+
+# Perpetual Night (Forces time back to midnight every second)
+perp-night: false
+
+# Force players to world spawn on server join (useful for automated servers)
+force-spawn: false
+
+# Force players to an essentials warp on server join (useful for automated servers)
+force-warp: false
+force-warp-location: {0, 0, 0}
+
+# Time before new game when automated, in SECONDS!
+auto-cooldown: 120
+
+# Automation Join Message - for automated servers only!
+auto-join-message: Welcome to the server! We are running automated ZombieSurvival games!
+
+# Used for AUTOMATED servers so that players cannot break blocks while in waiting area
+auto-anti-grief: false
+
+# Allow Spectate (Can players fly around and such after death??) only works if a spectate spawn point made
+allow-spectate: true
+
+# How many blocks from the purchase door sign to search for a DEFINED door (in a RADIUS, doors MUST be added with /zsa-door)
+buy-door-find-radius: 6
+
+# Should a message be displayed if they join?
+join-message: true
+
+#-----Misc. Global Settings-----#
+
+# Command used to join, DO NOT include the /
+join-commands: [join, zs-join]
+
+# Command used to leave, DO NOT include the /
+leave-commands: [leave, zs-leave]
+
+# Automation Enabled? (This will force everyone to vote for a map!)
+automated: false
+
+#-----Bite Effects-----#
+
+# Should this effect be enabled?
+Effects:
+  blindness: true
+  confusion: true
+  slowness: true
+  weakness: true
+  poison: true
+  hungerpoison: true
+  jump: true
+
+#-----Item Lists and Stuff-----#
+
+# ---FORMAT---
+#   "ID:DAMAGE"
+# ---Example---
+#    "373:8193"
+# Example is Regeneration Potion
+
+# Items they shall get when joining a game 0-nothing
+join-items:
+- "0"
+
+# What armor should they get at join if items-at-join true? 0-nothing
+armor-items:
+- "0"
+
+# Drop items must be formatted correctly!
+# ---FORMAT---
+#   "ID:DAMAGE:CHANCE"
+# ---Example---
+#    "373:8193:0.2"
+#    "1:0:0.55"
+# Example 1 is Regeneration Potion at 20% chance (USE DECIMAL CHANCE: 0.2)
+# Example 2 is stone at 55% chance (USE DECIMAL CHANCE: 0.55)
+# MUST USE 0 FOR DAMAGE VALUE if item normally has no such value
+drop-items:
+- "0"
+
+# List of blocks to be allowed broken during game (Block ID) 0-nothing
+allowbreak:
+- 0
+
+# List of blocks to be allowed placed during game (Block ID) 0-nothing
+allowplace:
+- 0
+
+# List of items to put into the mystery box upon purchase. 0-nothing
+mysterybox-items:
+- 0
